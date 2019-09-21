@@ -1,0 +1,11 @@
+Objectives
+A06 - Calculating Udp Checksum
+B09 - tcpdump of all requests after cookie expiry
+B13 - Displaying all Headers and analysing the difference in headers
+
+B09 and B13 we considered vtu.ac.in as an example and submitted the results
+
+A06 program is incomplete 
+  *Failed in adding src_ip,dest_ip
+  *successfully obatined checksum for data
+  
