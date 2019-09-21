@@ -1,0 +1,60 @@
+Before Cookie Expiry :
+
+Cookie : mc_session_ids[multi][4]=111850a3e135134a436211b6f6e92ba5723d37f1
+value  : c2db9af97e241632d4578551bd381592fb76fc08
+Expiry : Sat Sep 21 2019 19:20:52 GMT+0530 (India Standard Time)
+
+Request URL: http://vtu.ac.in/kn/
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 210.212.207.171:80
+Referrer Policy: origin
+Connection: close
+Content-Encoding: gzip
+Content-Length: 10375
+Content-Type: text/html; charset=UTF-8
+Date: Sat, 21 Sep 2019 14:07:43 GMT
+Server: Apache
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Connection: keep-alive
+Cookie: mc_session_ids[default]=b5885318be97dc75e6dda44a54f83aa3e270e9e1; mc_session_ids[multi][0]=140c2023049f63f32e5b90830d07e274a93ed904; mc_session_ids[multi][1]=4741ddb8e6f117bab6e1a329bc7e10508809ff0f; mc_session_ids[multi][2]=598b50c77ab19b0f9444ea69d2b279551a947c84; mc_session_ids[multi][3]=9a00570aba72b69c435bb010155f40d8df871af5; mc_session_ids[multi][4]=111850a3e135134a436211b6f6e92ba5723d37f1
+Host: vtu.ac.in
+Referer: https://www.google.com/
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+After Cookie Expiry
+
+Cookie : mc_session_ids[multi][4]=111850a3e135134a436211b6f6e92ba5723d37f1
+Value  : 3b29c03be64910098443bc96dd12114412eb7603
+Expiry : Sat Sep 21 2019 19:27:16 GMT+0530 (India Standard Time)
+
+Request URL: http://vtu.ac.in/kn/
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 210.212.207.171:80
+Referrer Policy: origin
+Connection: close
+Content-Encoding: gzip
+Content-Length: 10375
+Content-Type: text/html; charset=UTF-8
+Date: Sat, 21 Sep 2019 14:12:50 GMT
+Server: Apache
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Connection: keep-alive
+Host: vtu.ac.in
+Referer: https://www.google.com/
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
