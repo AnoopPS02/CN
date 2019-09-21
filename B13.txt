@@ -67,21 +67,21 @@ REQUEST HEADERS:
 --> DIFFERENCES FOUND IN THIS HEADERS:
 
 --> vtu.ac.in/en
-1.	by clicking english button from vtu.ac.in
+1.	By clicking english button from vtu.ac.in
 2.	request URL: http://vtu.ac.in/en/
 3.	status code:200 OK
 4.	content length:8279
 5.	charset=UTF-8
-UTF-8: variable encoding with character encoding capable of encoding all 1,11,064 valid code points in unicode using one to four 8 bit bytes.
+   UTF-8: variable encoding with character encoding capable of encoding all 1,11,064 valid code points in unicode using one to four 8      bit bytes.
 6.	X-Pingback: http://vtu.ac.in/xmlrpc.php
-pingback is one of 4 types of linkback methods for web authors to request notification when other authors link to one of their documents . This enables authors to keep track of who is linking to ,or referring to their articles.
+   pingback is one of 4 types of linkback methods for web authors to request notification when other authors link to one of their          documents . This enables authors to keep track of who is linking to ,or referring to their articles.
 7.	Referer:http://vtu.ac.in/kn/
 8.	Connection:keep-alive
-keep-alive connection is an instruction that allows a single TCP connection to remain open for multiple HTTP requests.
+   keep-alive connection is an instruction that allows a single TCP connection to remain open for multiple HTTP requests.
 9.	Cookies like:
-Set-cookie:mc_session_ids[default]
-Set-cookie:mc_session_ids[multi]
-10.	 host: vtu.ac.in
+   Set-cookie:mc_session_ids[default]
+   Set-cookie:mc_session_ids[multi]
+10.	Host: vtu.ac.in
 
 
 --> vtu.ac.in
@@ -90,11 +90,11 @@ Set-cookie:mc_session_ids[multi]
 3.	status code:301 move permanently
 4.	content length:188
 5.	charset=iso-8859-1
-iso 8859-1 8 bit single byte coded graphic character sets.
+   iso 8859-1 8 bit single byte coded graphic character sets.
 6.	X-Pingback method is not used here.
 7.	Referer:http://vtu.ac.in/en/
 8.	Connection:close
-close connection for the sender to.signal that connection will be closed after completion of the response.
+   close connection for the sender to.signal that connection will be closed after completion of the response.
 9.	No cookies found.
-10.	host:vtu.ac.in
+10.Host:vtu.ac.in
 
