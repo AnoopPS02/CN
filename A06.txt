@@ -1,0 +1,124 @@
+
+package com.company;
+import java.util.Arrays;
+import java.lang.String;
+
+public class Main {
+    static String Checksum(String input) {
+        String hex = new String();
+        int x, i, checksum = 0;
+        for (i = 0; i < input.length() - 2; i = i + 2) {
+            x = (int) (input.charAt(i));
+            hex = Integer.toHexString(x);
+            x = (int) (input.charAt(i + 1));
+
+            hex = hex + Integer.toHexString(x);
+            System.out.println(input.charAt(i) + "" + input.charAt(i + 1) + ":" + hex);
+            x=Integer.parseInt(hex,16);
+            checksum+=x;
+           // checksum+=x;
+        }
+        if(input.length()%2==0) {
+            x = (int) (input.charAt(i));
+            hex = Integer.toHexString(x);
+            x = (int) (input.charAt(i + 1));
+
+            hex = hex + Integer.toHexString(x);
+            System.out.println(input.charAt(i) + "" + input.charAt(i + 1) + ":" + hex);
+            x=Integer.parseInt(hex,16);
+        } else
+        {
+            x=(int)(input.charAt(i));
+            hex="00"+Integer.toHexString(x);
+            System.out.println(input.charAt(i)+":"+hex);
+        }
+        checksum+=x;
+        hex=Integer.toHexString(checksum);
+
+        if (hex.length()>4)
+        {
+            int carry=Integer.parseInt((""+hex.charAt(0)),16);
+            hex=hex.substring(1,5);
+            checksum=Integer.parseInt(hex,16);
+            checksum+=carry;
+        }
+        return  hex;
+    }
+
+    static int complement(int csum)
+    {
+        csum=Integer.parseInt("FFFF",16)-csum;
+        return csum;
+    }
+
+    public static int[] func(String a)
+    {
+        int[] ip = new int[4];
+        String[] parts = a.split("\\.");
+        System.out.println(parts);
+        for (int i = 0; i < 4; i++) {
+            ip[i] = Integer.parseInt(parts[i]);
+            System.out.println(ip[i]);
+        }
+        return ip;
+    }
+
+    public static void main(String[] args) {
+
+        String ip1 = "10.211.55.2";
+        String ip2 = "10.211.55.10";
+        String data = "ABCD";
+        int length = data.length() + 8;
+        int port = 17;
+        int src_port=32768;
+        int dest_port=8192;
+        int z=length+port+src_port+dest_port;
+        System.out.println(z);
+        int[] ipad = func(ip1);
+        String strArray[] = new String[ipad.length];
+        for (int i = 0; i < ipad.length; i++)
+            strArray[i] = String.valueOf(ipad[i]);
+        System.out.println(Arrays.toString(strArray));
+
+        int[] ipad1 = func(ip2);
+        String strArray1[] = new String[ipad1.length];
+        for (int i = 0; i < ipad1.length; i++)
+            strArray1[i] = String.valueOf(ipad1[i]);
+        System.out.println(Arrays.toString(strArray1));
+
+        int set=0,set1=0;
+        for (int i=0;i<strArray.length;i++){
+            String get=Checksum(strArray[i]);
+            set=Integer.parseInt(get,16);
+            set+=set;
+        }
+        System.out.println(set);
+
+        for (int i=0;i<strArray1.length;i++){
+            String get=Checksum(strArray1[i]);
+            set1=Integer.parseInt(get,16);
+            set1+=set1;
+        }
+        System.out.println(set1);
+        String datahex = Checksum(data);
+        int d=Integer.parseInt(datahex,16);
+        System.out.println(d);
+        int sum=z+set1+set+d;
+        String hex=Integer.toHexString(sum);
+        if (hex.length()>4)
+        {
+            int carry=Integer.parseInt((""+hex.charAt(0)),16);
+            hex=hex.substring(1,5);
+            int sum1=Integer.parseInt(hex,16);
+            sum1+=carry;
+            int checksum=complement(sum1);
+            String Csum=Integer.toHexString(sum1);
+            System.out.println(Csum);
+        }
+        else {
+            int cHecksum = complement(sum);
+            String ans=Integer.toHexString(cHecksum);
+            System.out.println(ans);
+        }
+    }
+}
