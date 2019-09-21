@@ -1,0 +1,100 @@
+ALL HEADERS FOUND IN http://vtu.ac.in
+
+Request URL: http://vtu.ac.in
+Request Method: GET
+Status Code: 301 Moved Permanently
+Remote Address: 210.212.207.171:80
+Referrer Policy: no-referrer-when-downgrade
+
+RESPONSE HEADERS :
+ Connection: close
+ Content-Encoding: gzip
+ Content-Length: 188
+ Content-Type: text/html; charset=iso-8859-1
+ Date: Sat, 21 Sep 2019 07:18:18 GMT
+ Location: http://vtu.ac.in/kn/
+ Server: Apache
+ Vary: Accept-Encoding
+ X-Frame-Options: SAMEORIGIN
+
+REQUEST HEADERS:
+ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+ Accept-Encoding: gzip, deflate
+ Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+ Connection: keep-alive
+ Host: vtu.ac.in
+ Referer: http://vtu.ac.in/en/
+ Upgrade-Insecure-Requests: 1
+ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+
+ALL HEADERS FOUND IN http://vtu.ac.in/en
+
+Request URL: http://vtu.ac.in/en/
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 210.212.207.171:80
+Referrer Policy: no-referrer-when-downgrade
+
+RESPONSE HEADERS :
+ Connection: close
+ Content-Encoding: gzip
+ Content-Length: 8279
+ Content-Type: text/html; charset=UTF-8
+ Date: Sat, 21 Sep 2019 07:11:26 GMT
+ Link: <http://wp.me/P44KEx-1YI>; rel=shortlink
+ Server: Apache
+ Set-Cookie: mc_session_ids[default]=9a3c6c9ee6295844baf5c504708ccb995a961d35; expires=Sat, 21-Sep-2019 07:16:27 GMT; path=/
+ Set-Cookie: mc_session_ids[multi][0]=5db622b7be68a13bde035de277f37f2f71563c0f; expires=Sat, 21-Sep-2019 07:16:27 GMT; path=/
+ Set-Cookie: mc_session_ids[multi][1]=43b48f1270d139ec3550f08f634d6ead8f645ee4; expires=Sat, 21-Sep-2019 07:16:27 GMT; path=/
+ Set-Cookie: mc_session_ids[multi][2]=ad1967f68f41d1e03a135ed402ca0a70c41f0973; expires=Sat, 21-Sep-2019 07:16:27 GMT; path=/
+ Set-Cookie: mc_session_ids[multi][3]=352b3e4601a0bddc22072b07fd784cec945fd232; expires=Sat, 21-Sep-2019 07:16:27 GMT; path=/
+ Set-Cookie: mc_session_ids[multi][4]=38104c4cb10254463460d0766d147b14f2a673e5; expires=Sat, 21-Sep-2019 07:16:27 GMT; path=/
+ Vary: Accept-Encoding
+ X-Frame-Options: SAMEORIGIN
+ X-Pingback: http://vtu.ac.in/xmlrpc.php
+
+REQUEST HEADERS:
+ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+ Accept-Encoding: gzip, deflate
+ Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+ Connection: keep-alive
+ Cookie: mc_session_ids[default]=9a3c6c9ee6295844baf5c504708ccb995a961d35; mc_session_ids[multi][0]=5db622b7be68a13bde035de277f37f2f71563c0f; mc_session_ids[multi][1]=43b48f1270d139ec3550f08f634d6ead8f645ee4; mc_session_ids[multi][2]=ad1967f68f41d1e03a135ed402ca0a70c41f0973; mc_session_ids[multi][3]=352b3e4601a0bddc22072b07fd784cec945fd232; mc_session_ids[multi][4]=38104c4cb10254463460d0766d147b14f2a673e5
+ Host: vtu.ac.in
+ Referer: http://vtu.ac.in/kn/
+ Upgrade-Insecure-Requests: 1
+ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+
+--> DIFFERENCES FOUND IN THIS HEADERS:
+
+--> vtu.ac.in/en
+1.	by clicking english button from vtu.ac.in
+2.	request URL: http://vtu.ac.in/en/
+3.	status code:200 OK
+4.	content length:8279
+5.	charset=UTF-8
+UTF-8: variable encoding with character encoding capable of encoding all 1,11,064 valid code points in unicode using one to four 8 bit bytes.
+6.	X-Pingback: http://vtu.ac.in/xmlrpc.php
+pingback is one of 4 types of linkback methods for web authors to request notification when other authors link to one of their documents . This enables authors to keep track of who is linking to ,or referring to their articles.
+7.	Referer:http://vtu.ac.in/kn/
+8.	Connection:keep-alive
+keep-alive connection is an instruction that allows a single TCP connection to remain open for multiple HTTP requests.
+9.	Cookies like:
+Set-cookie:mc_session_ids[default]
+Set-cookie:mc_session_ids[multi]
+10.	 host: vtu.ac.in
+
+
+--> vtu.ac.in
+1.	by typing url
+2.	request URL: http://vtu.ac.in/kn/
+3.	status code:301 move permanently
+4.	content length:188
+5.	charset=iso-8859-1
+iso 8859-1 8 bit single byte coded graphic character sets.
+6.	X-Pingback method is not used here.
+7.	Referer:http://vtu.ac.in/en/
+8.	Connection:close
+close connection for the sender to.signal that connection will be closed after completion of the response.
+9.	No cookies found.
+10.	host:vtu.ac.in
+
