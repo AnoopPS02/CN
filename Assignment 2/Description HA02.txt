@@ -14,3 +14,8 @@ Thus invocation of sender and receiver program would be as follows
   K - receiver buffer size.
   I - every Ith ack from receiver side is lost
   
+  The program shows how the packet is sent and how ackowledgement is received for the same
+  
+  In SR protocol the window size is increased only when all the acknowledgement is receieved.
+  If a packet is lost it is retransmitted again..
+  In case of lose in acknowledgment packet is retransmitted.
