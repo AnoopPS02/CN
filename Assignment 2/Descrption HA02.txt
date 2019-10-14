@@ -14,5 +14,3 @@ Thus invocation of sender and receiver program would be as follows
   K - receiver buffer size.
   I - every Ith ack from receiver side is lost
   
-  
- 
