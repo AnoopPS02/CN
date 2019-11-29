@@ -1,0 +1,15 @@
+      PART - A
+      
+ Q5.B sends ping request (default of 1 request per second) for 1 minute, takes a break for 30
+seconds and again sends ping request for 1 minute to A. 
+B implements rate limit using action "-j DROP" for A only and drops echo reply as per X and Y. No
+echo request should be dropped. From B send ping packet to some other machinefor 1 minute, no packets should be dropped.
+
+
+    PART - B
+    
+Q5.A sends UDP request (default of 1 packet per second) for 1 minute, takes a break for 60
+seconds and again sends UDP packets for 1 minute (default of 1 request per second) to B. B
+implements rate limit using action "-j DROP" for packets sent to A only and drops packets from
+as per X and Y. A implements rate limit for packets received from B using action "-j ACCEPT"
+with X as burst limit, and Y as average rate . No other communications should be dropped.
