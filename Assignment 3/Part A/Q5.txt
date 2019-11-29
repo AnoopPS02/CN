@@ -1,0 +1,38 @@
+X-->  01+10=11   
+Y-->  11/2=5
+
+iptables start
+
+#Remove all Rules
+iptables -F        
+
+#Set to Default
+iptables -p INPUT DROP     
+iptables -p OUTPUT DROP
+
+#Allows all packets to recieve from the machine
+iptables -A INPUT -i eth0 -p tcp --dport 22 -m state --state X,Y -j ACCEPT      
+iptables -A OUTPUT -o eth0 -p tcp --sport 22 -m state --state Y -j ACCEPT
+
+#Ping requests 
+iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT                 
+iptables -A INPUT -p icmp --icmp-type echo-reply -j ACCEPT
+
+#Again requests to other machine
+iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT                  
+iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
+
+#Average packets 1/min with burst rate 5
+iptables -A INPUT -p tcp --dport 80 -m limit --limit 1/minute --limit-burst 5 -j ACCEPT    
+
+#Count of Packets dropped
+iptables -N LOGGING
+iptables -A INPUT -j LOGGING
+iptables -A LOGGING -m limit --limit 1/min -j LOG --log-prefix "IPTables Packet Dropped: " --log-level 7
+iptables -A LOGGING -j DROP
+
+#loop back
+iptables -A INPUT -i lo -j ACCEPT              
+iptables -A OUTPUT -o lo -j ACCEPT
+
+iptables stop
